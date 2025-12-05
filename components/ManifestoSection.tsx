@@ -58,15 +58,15 @@ const Item: React.FC<ItemProps> = ({ item, index }) => {
             <span className="font-serif text-6xl md:text-9xl text-white/20 font-black select-none">
                 0{index + 1}
             </span>
-            <p className="font-sans text-4xl md:text-6xl font-medium leading-tight text-white drop-shadow-sm">
+            <p className="font-sans text-3xl md:text-6xl font-medium leading-tight text-white drop-shadow-sm break-words hyphens-auto">
                 {item.text}{" "}
-                <span className="text-accent font-serif font-black italic relative inline-block">
+                <span className="text-accent font-serif font-black italic relative inline-block break-words">
                     {item.highlight}
                     <motion.span 
                         initial={{ width: 0 }}
                         whileInView={{ width: '100%' }}
                         transition={{ delay: 0.4, duration: 0.6 }}
-                        className="absolute bottom-2 left-0 h-4 bg-white/10 -z-10 -rotate-2"
+                        className="absolute bottom-1 md:bottom-2 left-0 h-2 md:h-4 bg-white/10 -z-10 -rotate-2"
                     />
                 </span>
             </p>

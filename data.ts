@@ -75,7 +75,7 @@ export const slides: SlideData[] = [
       song: "Me and Your Mama",
       artist: "Childish Gambino",
       albumArt: "https://upload.wikimedia.org/wikipedia/en/1/10/Childish_Gambino_-_Awaken%2C_My_Love%21.png",
-      audioUrl: "/music.mp3"
+      audioUrl: "music.mp3"
     }
   },
   {
@@ -94,11 +94,11 @@ export const slides: SlideData[] = [
     type: 'gallery',
     title: "Наши моменты",
     images: [
-      "/resources/katletbulochka (1).jpeg", 
-      "/resources/katletbulochka (2).jpeg",
-      "/resources/katletbulochka (3).jpeg",
-      "/resources/katletbulochka (4).jpeg",
-      "/resources/katletbulochka (5).jpeg"
+      "resources/katletbulochka (1).jpeg", 
+      "resources/katletbulochka (2).jpeg",
+      "resources/katletbulochka (3).jpeg",
+      "resources/katletbulochka (4).jpeg",
+      "resources/katletbulochka (5).jpeg"
     ]
   },
   {

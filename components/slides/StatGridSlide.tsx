@@ -37,13 +37,17 @@ const StatGridSlide: React.FC<{ data: SlideData }> = ({ data }) => {
               transition={{ delay: index * 0.2 }}
               className="bg-white/60 backdrop-blur-md p-6 rounded-2xl flex items-center justify-between shadow-sm border border-white/50"
             >
-              <div className="flex items-center gap-4">
-                <div className="p-3 bg-secondary/20 rounded-full">
-                  <Icon className="w-6 h-6 text-dark" />
+              <div className="flex items-center gap-3 overflow-hidden">
+                <div className="p-2 md:p-3 bg-secondary/20 rounded-full shrink-0">
+                  <Icon className="w-5 h-5 md:w-6 md:h-6 text-dark" />
                 </div>
-                <span className="font-sans text-dark/80 font-medium text-lg">{item.label}</span>
+                <span className="font-sans text-dark/80 font-medium text-sm md:text-lg truncate">{item.label}</span>
               </div>
-              <span className="font-serif text-2xl font-bold text-accent">{item.value}</span>
+              <span className={`font-serif font-bold text-accent text-right shrink-0 ${
+                item.value.length > 8 ? "text-xl md:text-2xl" : "text-2xl md:text-3xl"
+              }`}>
+                {item.value}
+              </span>
             </motion.div>
           );
         })}

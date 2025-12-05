@@ -16,17 +16,17 @@ const ChartSlide: React.FC<{ data: SlideData }> = ({ data }) => {
         <h2 className="font-serif text-4xl text-dark font-bold mb-2">{data.title}</h2>
       </motion.div>
 
-      <div className="flex justify-between items-end h-64 gap-4 px-2">
-        {chartData.map((item, index) => (
-          <div key={index} className="flex-1 flex flex-col items-center justify-end h-full gap-2">
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.2 + (index * 0.1) }}
-              className="font-sans font-bold text-dark text-sm"
-            >
-              {item.value}
-            </motion.div>
+      <div className="flex justify-between items-end h-80 gap-2 px-2 pb-10 w-full">
+  {chartData.map((item, index) => (
+    <div key={index} className="flex-1 flex flex-col items-center justify-end h-full gap-2 group">
+      <motion.div
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1.2 + (index * 0.1) }}
+        className="font-sans font-bold text-accent text-xs md:text-sm whitespace-nowrap mb-1"
+      >
+        {item.value}
+      </motion.div>
             
             <motion.div
               initial={{ height: 0 }}
