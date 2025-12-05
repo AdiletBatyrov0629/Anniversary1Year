@@ -94,11 +94,11 @@ export const slides: SlideData[] = [
     type: 'gallery',
     title: "Наши моменты",
     images: [
-      "resources/katletbulochka (1).jpeg", 
-      "resources/katletbulochka (2).jpeg",
-      "resources/katletbulochka (3).jpeg",
-      "resources/katletbulochka (4).jpeg",
-      "resources/katletbulochka (5).jpeg"
+      "katletbulochka (1).jpeg", 
+      "katletbulochka (2).jpeg",
+      "katletbulochka (3).jpeg",
+      "katletbulochka (4).jpeg",
+      "katletbulochka (5).jpeg"
     ]
   },
   {
